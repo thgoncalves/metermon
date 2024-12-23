@@ -95,6 +95,9 @@ while True:
     msg['Protocol'] = data['Type']
     msg['Time'] = data['Time']
 
+    print("###")
+    print(msg['Protocol'])
+
     # SCM messages
     if msg['Protocol'] == "SCM":
         msg['ID'] = str(data['Message']['ID'])
